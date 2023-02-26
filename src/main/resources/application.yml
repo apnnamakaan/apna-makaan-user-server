@@ -1,0 +1,16 @@
+server: 
+  port: 8084
+  
+spring: 
+  data:
+    mongodb:
+      uri: mongodb+srv://root:root@cluster0.5p7pj.mongodb.net/?retryWrites=true&w=majority
+      database: test
+
+web:
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+    max-age: 3600
+    allowed-headers: "Requestor-Type"
+    exposed-headers: "X-Get-Header"      
